@@ -1,1 +1,150 @@
-/*# sourceMappingURL=style.css.map */
+.header {
+  background-color: #F3F6FF;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 0 24px;
+  padding: 24px 0 0;
+}
+.header-top_logo {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+  align-items: flex-end;
+}
+.header-top_brand-name {
+  font-size: 28px;
+  font-weight: 600;
+}
+.header-top_toggle {
+  display: flex;
+  align-items: flex-end;
+  gap: 28px;
+  max-height: 154px;
+}
+
+.header-nav {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 0 15px;
+  margin-bottom: 26px;
+}
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 69px;
+  position: relative;
+  padding: 14px 0 8px;
+}
+.header-nav ul::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #323334;
+}
+.header-nav ul::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  background-color: #323334;
+}
+.header-nav_a {
+  font-weight: 600;
+}
+
+.header-search {
+  max-width: 716px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 30px;
+  gap: 7px;
+}
+.header-search_field {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  padding: 5px 0;
+}
+.header-search_btn {
+  background-color: #4C8787;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  padding: 17px 34px;
+}
+
+.search_item {
+  position: absolute;
+  top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.search_field {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #F3F6FF;
+  border-radius: 25px;
+  border: 2px solid #050019;
+}
+
+.header-pluses {
+  display: flex;
+  gap: 270px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+.header-pluses_item {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+.header-pluses p {
+  font-size: 12px;
+  font-weight: 600;
+  color: hsla(210deg, 2%, 20%, 0.5);
+  text-transform: uppercase;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #323334;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 70px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

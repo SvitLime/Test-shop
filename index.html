@@ -6,13 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <div class="header_container container">
+            <section class="header-top">
+                <a class="header-top_logo">
+                    <div><img src="./assets/svg/logo.svg" alt="shop logo"></div>
+                    <div>
+                        <p class="header-top_brand-name">BRAND NAME</p>
+                    </div>
+                </a>
+                <div class="header-top_toggle">
+                    <a>
+                        <img src="./assets/svg/your-page-img.svg" alt="customer profile photo">
+                    </a>
+                    <a>
+                        <img src="./assets/svg/carat.svg" alt="">
+                    </a>
+                    <a>
+                        <svg width="34px" height="25px">
+                            <use href="./assets/svg-icons.svg#icon-menu-toggle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="header-nav">
+                <ul>
+                    <li><a class="header-nav_a" href="#">HOME</a></li>
+                    <li><a class="header-nav_a" href="#">STORE</a></li>
+                    <li><a class="header-nav_a" href="#">ACCESSORIES</a></li>
+                    <li><a class="header-nav_a" href="#">BRAND</a></li>
+                    <li><a class="header-nav_a" href="#">PAGES</a></li>
+                    <li><a class="header-nav_a" href="#">ABOUT US</a></li>
+                    <li><a class="header-nav_a" href="#">NEWS</a></li>
+                    <li><a class="header-nav_a" href="#">CONTACT US</a></li>
+                </ul>
+            </section>
+            <section class="header-search">
+                <div class="header-search_field">
+                    <div class="search_item"><img src="./assets/svg/seach-vector.svg" alt=""></div>
+                    <label class="hidden" for="">Search field</label>
+                    <input class="search_field" type="text" label="Search field">
+                </div>
+                <button class="header-search_btn">
+                    Search
+                </button>
+            </section>
+            <section class="header-pluses">
+                <div class="header-pluses_item">
+                    <svg width="30px" height="22px">
+                        <use href="./assets/svg-icons.svg#icon-free-shopping"></use>
+                    </svg>
+                    <p>FREE SHIPPING</p>
+                </div>
+                <div class="header-pluses_item">
+                    <svg width="22px" height="29px">
+                        <use href="./assets/svg-icons.svg#icon-refund"></use>
+                    </svg>
+                    <p>100% REFUND</p>
+                </div>
+                <div class="header-pluses_item">
+                    <svg width="22px" height="21px">
+                        <use href="./assets/svg-icons.svg#icon-support"></use>
+                    </svg>
+                    <p>SUPPORT 24/7</p>
+                </div>
+            </section>
+        </div>
+        
     </header>
     <main>
-
+        <section class="hot-deals">
+            <div class="container">
+                
+            </div>
+        </section>
     </main>
     <footer>
 
