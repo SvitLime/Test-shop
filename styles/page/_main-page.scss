@@ -1,0 +1,69 @@
+@import '../utilites/variables';
+
+.main{
+    background-color: $greyColor;
+}
+
+.new-products{
+    display: flex;
+    margin-top: 23px;
+    gap: 23px;
+    @media only screen and (max-width: 1278px) {
+        flex-wrap: wrap;
+    }
+    h3{
+        margin-bottom: 40px;
+        font-size: 28px;
+        font-weight: 900;
+        @media only screen and (max-width: 767px) {
+            font-size: 1.5rem;
+        }
+    }
+    &__left{
+        max-width: 636px;
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(250, 250, 250, 1);
+        position: relative;
+        @media only screen and (max-width: 1278px) {
+            max-width: none;
+        }
+        
+        h3{
+            width: max-content;
+        }
+        &__info{
+            position: relative;
+            left: -60px;
+            @media only screen and (max-width: 1278px) {
+                left: 0;
+            }
+        }
+        &__photo{
+            @media only screen and (max-width: 767px) {
+                width: 50%;
+            }
+        }
+    }
+    &__right{
+        max-width: 636px;
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(234, 233, 231, 1);
+        @media only screen and (max-width: 1278px) {
+            max-width: none;
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+        }
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    
+}
