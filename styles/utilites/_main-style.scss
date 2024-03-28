@@ -34,6 +34,10 @@ a{
     }
 }
 
+.container-ivy{
+    margin: 0;
+}
+
 .hidden{
     display: none;
 }
@@ -49,5 +53,11 @@ a{
     text-transform: uppercase;
     @media only screen and (max-width: 768px) {
         font-size: 14px;
+    }
+    @media only screen and (max-width: 479px) {
+        padding: 6px 9px;
+        color: $darkblueColor;
+        background-color: transparent;
+        border: 2px solid $darkblueColor;
     }
 }

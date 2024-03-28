@@ -34,6 +34,9 @@
         
         h3{
             width: max-content;
+            @media only screen and (max-width: 479px) {
+                font-size: 1rem;
+            }
         }
         &__info{
             position: relative;
@@ -66,4 +69,63 @@
         }
     }
     
+}
+
+.main-page__decor{
+    @media only screen and (max-width: 479px) {
+        display: none;
+    }
+}
+
+.bedsheet{
+    background-image: url(../assets/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bedsheet-div {
+    // margin: 115px 36px;
+    padding: 60px 130px;
+    background-color: rgba(249, 211, 112, 0.8);
+    max-width: fit-content;
+    @media only screen and (max-width: 768px) {
+        padding: 24px 40px;
+    }
+    
+    &__h2 {
+        font-size: 28px;
+        font-weight: 600;
+        color: $darkblueColor;
+        margin-bottom: 28px;
+    };
+
+    &__prise {
+        display: flex;
+        gap: 30px;
+        p{
+            color: $textTopColor;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        margin-bottom: 23px;
+    };
+
+    &__p {
+        margin-bottom: 36px;
+        max-width: 320px
+    };
+};
+
+.line-on-text {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: $textTopColor;
+    font-weight: 600;
+}
+
+.bedsheet__container{
+padding: 115px 36px;
+@media only screen and (max-width: 768px) {
+        padding: 0;
+    }
 }

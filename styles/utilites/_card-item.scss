@@ -3,7 +3,26 @@
 .line-cards{
     margin: 60px 0;
     display: flex;
+    flex-direction: column;
     gap: 23px;
+    @media only screen and (max-width: 1024px) {
+        gap: 16px;
+    }
+}
+.swiper{
+    width: fit-content;
+    max-height: 515px;
+    height: 100%;
+    padding: 10px 0;
+    @media only screen and (max-width: 1024px) {
+        max-height: 422px;
+    }
+    @media only screen and (max-width: 768px) {
+        max-height: 339px;
+    }
+    @media only screen and (max-width: 479px) {
+        max-height: 275px;
+    }
 }
 
 .decor-card{
@@ -12,6 +31,12 @@
     background-size: cover;
     max-width: 300px;
     height: 100%;
+    @media only screen and (max-width: 1024px) {
+        height: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 
     &__second{
        background-color: rgba(0, 0, 0, 0.4);
@@ -22,6 +47,10 @@
        justify-content: center;
        padding: 0 50px;
        height: 100%;
+        @media only screen and (max-width: 1024px) {
+            width: 200px;
+            padding: 0 10px;
+        }
     }
     h3{
         color: $textLightColor;
@@ -40,8 +69,13 @@
 
 .decor__list{
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 24px;
+    justify-content: space-between;
+    @media only screen and (max-width: 1024px) {
+            gap: 16px;
+            justify-content: space-between;
+        }
 }
 
 .card__img{
@@ -49,6 +83,10 @@
     margin-bottom: 32px;
     height: 450px;
     width: 300px;
+    @media only screen and (max-width: 1024px) {
+        width: 200px;
+        height: 300px;
+    }
 }
 
 .card-hover{
@@ -101,5 +139,52 @@
 }
 
 .decor__item{
+    @media only screen and (max-width: 479px) {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
 
+.decor-second{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    @media only screen and (max-width: 1024px) {
+            gap: 16px;
+        }
+}
+
+.card-second{
+background-image: url(/assets/img/towel.png);
+}
+
+.swiper-mobile{
+    display: none;
+    width: fit-content;
+        max-height: 515px;
+        height: 100%;
+    @media only screen and (max-width: 479px) {
+        display: block;
+    }
+}
+
+.swiper-pagination{
+    position: relative;
+}
+
+.listA{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 20px auto 0;
+}
+
+.second-slider{
+    position: relative;
+    width: fit-content;
+        max-height: 515px;
+        height: 100%;
 }

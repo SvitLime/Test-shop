@@ -1,0 +1,120 @@
+@import './variables';
+
+.fotter{
+    background-color: $blueColor;
+    h3{
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFF;
+        margin-bottom: 34px;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+    p{
+        color: hsl(0, 0%, 100%, 0.5);
+        margin-bottom: 16px;
+    }
+    a{
+        color: hsl(0, 0%, 100%, 0.5);
+        margin-bottom: 16px;
+    }
+    li{
+        margin-bottom: 16px;
+    }
+    
+}
+
+.number{
+    font-size: 24px;
+    color: hsl(0, 0%, 100%, 0.5);
+    margin-right: 8px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.svg-fotter{
+    fill: #FFF;
+}
+
+.fotter-div{
+    max-width: 314px;
+    @media only screen and (max-width: 1024px) {
+        max-width: 260px;
+    }
+    @media only screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.fotter-container{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 50px 0;
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 41px;
+    a{
+        color: #FFF;
+        font-weight: 600;
+    }
+    
+}
+
+.update-top{
+    margin-bottom: 67px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #FFF;
+        bottom: -33px;
+        left: 0;
+    }
+}
+
+
+.botton{
+    background-color: $darkblueColor;
+    color: $textLightColor;
+    padding: 20px 0;
+    p{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+}
+
+.fotter-mobile{
+    display: none;
+    @media only screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+
